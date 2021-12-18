@@ -4,5 +4,7 @@ Excel file from vulnerable application will be created every time you run the sc
 
 ```
 pip install -r requirements.txt
+```
+```
 python Log4jSoftwareList.py
 ```
