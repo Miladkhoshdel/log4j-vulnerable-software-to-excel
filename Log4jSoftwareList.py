@@ -22,7 +22,7 @@ for i in range(27):
     for tr in rows:
         whole_tds = tr.find_all('td')
         tmpList = [whole_tds[i].get_text() for i in range(3, 7)]
-        if "Vulnerable" not in tmpList:
+        if ("Vulnerable" not in tmpList) and ("Workaround" not in tmpList) and ("Fix" not in tmpList):
             continue
         if whole_tds[0].get_text() not in result.keys():
             result[whole_tds[0].get_text()] = [whole_tds[1].get_text()]
